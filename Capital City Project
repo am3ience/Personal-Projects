@@ -1,0 +1,13 @@
+from lxml import html
+import requests
+
+print ("my program will tell you the capital city of a Canadian Province or territory.")
+province = input("type a province/territory: ")
+
+page = requests.get('http://www.nrcan.gc.ca/earth-sciences/geography/place-names/origins-geographical-names/9188')
+tree = html.fromstring(page.content)
+
+capital = tree.xpath('//div[@class="field-item even]/text()')
+
+print ("Capitals: ", capital)
+# print (province)
