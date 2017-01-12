@@ -10,8 +10,8 @@
 import praw
 from Tkinter import *
 
-reddit = praw.Reddit(client_id='hlzagIWhb_M7JQ',
-                     client_secret='ePs7KB0XD1uR_gxiQAljhX-wn3E',
+reddit = praw.Reddit(client_id='',
+                     client_secret='',
                      user_agent='practise parse bot'
                      )
 
